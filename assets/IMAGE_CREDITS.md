@@ -11,7 +11,7 @@
 | day1-dotonbori.jpg | [Commons: File:Dotonbori river night.jpg](https://commons.wikimedia.org/wiki/File:Dotonbori_river_night.jpg) | Emma0mb | CC BY 4.0 |
 | day2-fushimi.jpg | [Commons: File:KyotoFushimiInariLarge.jpg](https://commons.wikimedia.org/wiki/File:KyotoFushimiInariLarge.jpg) | Paul Vlaar | CC BY-SA 3.0 |
 | day2-kiyomizu.jpg | [Commons: File:Kiyomizu-dera, Kyoto, November 2016 -01.jpg](https://commons.wikimedia.org/wiki/File:Kiyomizu-dera,_Kyoto,_November_2016_-01.jpg) | Martin Falbisoner | CC BY-SA 4.0 |
-| day2-togetsu.jpg | [Commons: File:View of the Katsura River and the Arashiyama mountains from Togetsukyo Bridge, Kyoto, 2016.jpg](https://commons.wikimedia.org/wiki/File:View_of_the_Katsura_River_and_the_Arashiyama_mountains_from_Togetsukyo_Bridge,_Kyoto,_2016.jpg) | DimiTalen | CC0 |
-| day3-usj.jpg | [Commons: File:Universal Studios Japan 2.JPG](https://commons.wikimedia.org/wiki/File:Universal_Studios_Japan_2.JPG) | Terence Ong | CC BY 2.5 |
+| day2-togetsu.jpg | [Commons: File:Togetsu-kyō bridge at golden hour, Kyoto, Japan.jpg](https://commons.wikimedia.org/wiki/File:Togetsu-ky%C5%8D_bridge_at_golden_hour,_Kyoto,_Japan.jpg) | Basile Morin | CC BY-SA 4.0 |
+| day3-usj.jpg | [Commons: File:Universal Studios Japan entrance.jpg](https://commons.wikimedia.org/wiki/File:Universal_Studios_Japan_entrance.jpg) | Csiiiyu | CC BY-SA 4.0 |
 | day4-kix.jpg | [Commons: File:関西国際空港全体写真20220811.jpg](https://commons.wikimedia.org/wiki/File:%E9%96%A2%E8%A5%BF%E5%9B%BD%E9%9A%9B%E7%A9%BA%E6%B8%AF%E5%85%A8%E4%BD%93%E5%86%99%E7%9C%9F20220811.jpg) | Ankou1192 | CC BY-SA 4.0 |
 | guidebook-qr.png | 가이드북 주소로 생성 | Tourmaker | — |
