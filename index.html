@@ -76,9 +76,10 @@
             box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08); flex-shrink: 0;
         }
         @media (min-width: 768px) { .schedule-thumb { max-width: 11.5rem; } }
-        .weather-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0.375rem; }
-        @media (min-width: 640px) { .weather-grid { gap: 0.75rem; } }
-        .weather-card { min-width: 0; word-break: keep-all; }
+        .weather-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.5rem; width: 100%; min-width: 0; }
+        @media (min-width: 640px) { .weather-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0.75rem; } }
+        .weather-card { min-width: 0; max-width: 100%; word-break: keep-all; }
+        #smart-info .info-card { min-width: 0; max-width: 100%; }
         .esg-stat-label { line-height: 1.25; word-break: keep-all; }
         @media screen { #print-area { display: none !important; } }
         @media print {
@@ -565,22 +566,22 @@
                 <h2 class="text-2xl md:text-3xl font-bold text-slate-800 mt-2 font-title">여행비서</h2>
                 <p class="text-slate-500 text-sm mt-2">오사카 날씨, 엔화 계산, 물가 참고와 일본어 회화를 한곳에서 봅니다.</p>
             </div>
-            <div class="grid lg:grid-cols-2 gap-6 mb-8">
-                <div class="bg-blue-50/50 p-5 rounded-2xl border border-blue-100">
+            <div class="grid lg:grid-cols-2 gap-6 mb-8 min-w-0">
+                <div class="info-card bg-blue-50/50 p-4 sm:p-5 rounded-2xl border border-blue-100">
                     <h3 class="font-bold text-blue-900 mb-4"><i class="fa-solid fa-cloud-sun text-blue-500 mr-2"></i>오사카 4일 날씨</h3>
                     <div id="weather-container" class="weather-grid">
-                        <div class="text-sm text-slate-500 py-4 col-span-4 text-center">날씨 정보를 불러오는 중입니다...</div>
+                        <div class="text-sm text-slate-500 py-4 col-span-full text-center">날씨 정보를 불러오는 중입니다...</div>
                     </div>
                     <p class="mt-3 text-xs text-slate-600 bg-white p-3 rounded-lg border border-blue-100">10월 중순 오사카는 낮 20℃ 전후, 아침저녁은 선선합니다. 얇은 겉옷과 편한 신발을 준비해 주세요.</p>
                 </div>
-                <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
-                    <h3 class="font-bold text-slate-800 mb-4"><i class="fa-solid fa-yen-sign text-emerald-500 mr-2"></i>엔화 계산기 <span class="text-xs font-normal text-slate-400">(송금 환율 +1.5%)</span></h3>
-                    <div class="flex items-center gap-3">
-                        <input id="jpy-input" type="number" min="0" placeholder="엔화 금액" class="flex-1 border border-slate-200 rounded-xl px-4 py-3 font-bold" oninput="convertJpy()">
-                        <span class="text-slate-400 font-bold">→</span>
-                        <div class="flex-1 bg-slate-50 rounded-xl px-4 py-3">
+                <div class="info-card bg-white p-4 sm:p-5 rounded-2xl border border-slate-200 shadow-sm">
+                    <h3 class="font-bold text-slate-800 mb-4 break-keep"><i class="fa-solid fa-yen-sign text-emerald-500 mr-2"></i>엔화 계산기 <span class="text-xs font-normal text-slate-400">(송금 환율 +1.5%)</span></h3>
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-2 min-w-0">
+                        <input id="jpy-input" type="number" min="0" placeholder="엔화 금액" class="w-full min-w-0 sm:flex-1 border border-slate-200 rounded-xl px-3 py-3 font-bold" oninput="convertJpy()">
+                        <span class="hidden sm:inline text-slate-400 font-bold">→</span>
+                        <div class="w-full min-w-0 sm:flex-1 bg-slate-50 rounded-xl px-3 py-3">
                             <span id="krw-output" class="text-xl font-bold text-slate-800">0</span>
-                            <span class="text-sm text-slate-500"> 원</span>
+                            <span class="text-sm text-slate-500">원</span>
                         </div>
                     </div>
                     <p id="fx-note" class="text-xs text-slate-400 mt-3">환율을 불러오는 중입니다...</p>
@@ -1146,7 +1147,7 @@
                 ['타코야키', 800]
             ];
             el.innerHTML = items.map(([name, jpy]) =>
-                `<div class="flex justify-between py-1.5 border-b border-slate-100"><span>${name}</span><span class="font-bold">${jpy.toLocaleString()}엔 · 약 ${Math.round(jpy * jpyKrw).toLocaleString()}원</span></div>`
+                `<div class="flex items-start justify-between gap-3 py-1.5 border-b border-slate-100 min-w-0"><span class="min-w-0">${name}</span><span class="font-bold text-right leading-snug shrink-0">${jpy.toLocaleString()}엔<br><span class="text-[11px] font-medium text-slate-500">약 ${Math.round(jpy * jpyKrw).toLocaleString()}원</span></span></div>`
             ).join('');
         }
         fetchFx();
@@ -1204,7 +1205,7 @@
                 }
                 container.innerHTML = html;
             } catch (e) {
-                container.innerHTML = '<div class="text-sm text-slate-500 py-4 col-span-4 text-center">날씨 정보를 불러오지 못했습니다.</div>';
+                container.innerHTML = '<div class="text-sm text-slate-500 py-4 col-span-full text-center">날씨 정보를 불러오지 못했습니다.</div>';
             }
         }
         fetchWeather();
