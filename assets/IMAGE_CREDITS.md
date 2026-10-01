@@ -1,9 +1,11 @@
 # Image credits
 
-호텔 전경은 지점이 수배 전이라 넣지 않았습니다.
+숙소는 사라사 호텔 신오사카(트윈 3실)입니다.
 
 | File | Source | Author | License |
 |------|--------|--------|---------|
+| hotel-exterior.jpg | [SARASA HOTELS 공식 · 신오사카](https://sarasahotels.com/?hotel=shinosaka) | SARASA HOTELS | 호텔 안내용 전경 |
+| hotel-twin.jpg | [SARASA HOTELS 공식 · 신오사카 트윈](https://sarasahotels.com/?hotel=shinosaka#rooms) | SARASA HOTELS | 호텔 안내용 객실 |
 | hero.jpg | [Commons: File:Osaka Castle Keep Tower in 201411 002.JPG](https://commons.wikimedia.org/wiki/File:Osaka_Castle_Keep_Tower_in_201411_002.JPG) | Mc681 | CC BY-SA 4.0 |
 | og-thumb.jpg | [Commons: File:Osaka Dotonbori yoru 02.jpg](https://commons.wikimedia.org/wiki/File:Osaka_Dotonbori_yoru_02.jpg) | Sakai Yayoi | CC0 |
 | day1-rinku.jpg | [Commons: File:Rinku premium outlets02s3200.jpg](https://commons.wikimedia.org/wiki/File:Rinku_premium_outlets02s3200.jpg) | 663highland | CC BY 2.5 |
